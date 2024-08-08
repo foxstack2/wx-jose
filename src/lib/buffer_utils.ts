@@ -1,7 +1,10 @@
 import digest from '../runtime/digest.js'
+import { TextEncoder as MyTextEncoder, TextDecoder as MyTextDecoder } from 'text-encoding'
 
-export const encoder = new TextEncoder()
-export const decoder = new TextDecoder()
+export const encoder = new MyTextEncoder()
+export const decoder = new MyTextEncoder()
+export const newEncoder = () => new MyTextEncoder()
+export const newDecoder = () => new MyTextDecoder()
 
 const MAX_INT32 = 2 ** 32
 
