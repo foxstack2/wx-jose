@@ -2,7 +2,7 @@ import digest from '../runtime/digest.js'
 import { TextEncoder as MyTextEncoder, TextDecoder as MyTextDecoder } from 'text-encoding'
 
 export const encoder = new MyTextEncoder()
-export const decoder = new MyTextEncoder()
+export const decoder = new MyTextDecoder()
 export const newEncoder = () => new MyTextEncoder()
 export const newDecoder = () => new MyTextDecoder()
 
