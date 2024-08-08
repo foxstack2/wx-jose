@@ -1,3 +1,9 @@
+# NOTICE
+
+THIS PACKAGE IS AN EXPERIMENT FORK OF THE ORIGINAL JOSE. DON'T USE THIS PACKAGE AS IT WILL NOT WORK TO YOUR EXPECTATION.
+
+---
+
 # jose
 
 `jose` is JavaScript module for JSON Object Signing and Encryption, providing support for JSON Web Tokens (JWT), JSON Web Signature (JWS), JSON Web Encryption (JWE), JSON Web Key (JWK), JSON Web Key Set (JWKS), and more. The module is designed to work across various Web-interoperable runtimes including Node.js, browsers, Cloudflare Workers, Deno, Bun, and others.
@@ -15,11 +21,13 @@ Support from the community to continue maintaining and improving this module is 
 `jose` is distributed via [npmjs.com](https://www.npmjs.com/package/jose), [deno.land/x](https://deno.land/x/jose), [cdnjs.com](https://cdnjs.com/libraries/jose), [jsdelivr.com](https://www.jsdelivr.com/package/npm/jose), and [github.com](https://github.com/panva/jose).
 
 **`example`** ESM import
+
 ```js
 import * as jose from 'jose'
 ```
 
 **`example`** CJS require
+
 ```js
 const jose = require('jose')
 ```
@@ -114,6 +122,7 @@ The algorithm implementations have been tested using test vectors from their res
 The `jose` module is compatible with JavaScript runtimes that support the utilized Web API globals and standard built-in objects or are Node.js.
 
 The following runtimes are supported _(this is not an exhaustive list)_:
+
 - [Bun](https://github.com/panva/jose/issues/471)
 - [Browsers](https://github.com/panva/jose/issues/263)
 - [Cloudflare Workers](https://github.com/panva/jose/issues/265)
@@ -126,8 +135,8 @@ Please note that certain algorithms may not be available depending on the runtim
 
 ## Supported Versions
 
-| Version | Security Fixes 🔑 | Other Bug Fixes 🐞 | New Features ⭐ |
-| ------- | --------- | -------- | -------- |
-| [v5.x](https://github.com/panva/jose/tree/v5.x) | ✅ | ✅ | ✅ |
-| [v4.x](https://github.com/panva/jose/tree/v4.x) | ✅ | ❌ | ❌ |
-| [v2.x](https://github.com/panva/jose/tree/v2.x) | ✅ | ❌ | ❌ |
+| Version                                         | Security Fixes 🔑 | Other Bug Fixes 🐞 | New Features ⭐ |
+| ----------------------------------------------- | ----------------- | ------------------ | --------------- |
+| [v5.x](https://github.com/panva/jose/tree/v5.x) | ✅                | ✅                 | ✅              |
+| [v4.x](https://github.com/panva/jose/tree/v4.x) | ✅                | ❌                 | ❌              |
+| [v2.x](https://github.com/panva/jose/tree/v2.x) | ✅                | ❌                 | ❌              |
