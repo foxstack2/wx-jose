@@ -18,9 +18,9 @@ jobs:
       fail-fast: false
       matrix:
         prepare-script:
-          - browser
-          - node-cjs
-          - node-esm
+          # - browser
+          # - node-cjs
+          # - node-esm
           - universal
     steps:
       - name: Checkout
@@ -42,7 +42,7 @@ jobs:
           fail-on-cache-miss: true
       - name: Prepare distribution
         run: node tools/publish-${{ matrix.prepare-script }}
-      - run: npm publish --provenance
+      - run: npm publish
         env:
           NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
 
